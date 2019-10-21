@@ -152,7 +152,12 @@
             "description": "Name of the image signer (signing key-pair's name)",
             "type": "string",
             "pattern": "\\S"
-        }
+        },
+	"RUN_JOB_AUTO": {
+	    "title": "Run Jobs",
+	    "type": "string",
+	    "enum": [ "push", "push | pull_request", "push | pull_request | pull_request_closed" ]
+	}
     },
     "required": [
         "app-name",
