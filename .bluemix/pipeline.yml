@@ -14,7 +14,7 @@ stages:
     branch: master
     service: ${GIT_REPO}
   triggers:
-  - type: commit
+  - type: '{{form.pipeline.parameters.RUN_JOB_AUTO}}'
   properties:
   - name: IMAGE_NAME
     value: ${APP_NAME}
