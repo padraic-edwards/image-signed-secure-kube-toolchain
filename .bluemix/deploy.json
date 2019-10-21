@@ -377,6 +377,16 @@
             ]
         },
         {
+			"type": "select",
+			"title": "Run jobs automatically for Git events on the chosen branch",
+			"key": "RUN_JOB_AUTO",
+			"titleMap": {
+				"push": "When a commit is pushed",
+				"push | pull_request": "When a commit is pushed AND when a PR is opened or udpated",
+				"push | pull_request | pull_request_closed": "When a commit is pushed AND when a PR is opened, udpated, or closed"
+			}
+		},
+        {
             "type": "text",
             "readonly": false,
             "title": "Key Protect Vault Instance name",
